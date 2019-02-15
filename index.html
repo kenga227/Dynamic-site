@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant</title>
+</head>
+
+<body>
+ <header>
+     <h1>Petrogad</h1>
+     <div id="filter"></div>
+        <div class="nav">
+         <a href="#" id="all">All</a>
+     </div>
+ </header>
+ <main></main>
+ 
+ 
+<div class="modalbg hide">
+    <article class="modal">
+       <button id="close">X</button>
+        <h3 class="modal-name"></h3>
+        <h4 class="modal-price"></h4>
+        <img class="modal-img" src="" alt="picture of the dish">
+        <h4 class="modal-old"></h4>
+        <h5 class="modal-veg"></h5>
+        <h5 class="modal-alc"></h5>
+        <h5 class="modal-reg"></h5>
+        <h5 class="modal-allerg"></h5>
+        <p class="modal-desc">description</p>
+    </article>
+</div>
+ 
+  <template id="myTemp">
+      <article>
+          <h3>Name</h3>
+          <h4>Price</h4>
+          <img src="img" alt="">
+          <h5 class="alc"></h5>
+          <h5 class="veg"></h5>
+          <p>Description</p>
+          <button>Details</button>
+      </article>
+  </template>
+  <script src="js/java.js"></script>
+  
+</body>
+</html>

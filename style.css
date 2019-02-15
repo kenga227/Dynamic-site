@@ -1,0 +1,314 @@
+
+* {
+    margin: 0;
+}
+body {
+    background-color: lightgrey;
+    font-family: "Helvetica"
+}
+
+.hide{
+    display: none;
+}
+
+.soldout {
+    opacity: 0.4;
+}
+
+.soldouth {
+    color: #8b0000;
+}
+
+.discount {
+    color: darkgreen;
+}
+
+button {
+    font-size: 4vw;
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.modalbg {
+    z-index: 1;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-background {
+    height: 70%;
+    margin: 3em;
+    padding: 4em;
+    
+}
+article.modal{
+    height: calc(100% - 100px);
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 3em;
+}
+
+
+article.modal h4,
+article.modal h5 {
+    font-size: 3vw;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+
+
+
+h2 {
+    background-color: white;
+    text-align: center;
+    text-transform: capitalize;
+    font-size:50px;
+    margin-top: 50px;
+}
+
+header {
+    background-image: url("../images/salt.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: auto;
+    position: relative;
+}
+
+header h1 {
+    font-size: 10vw;
+    color: white;
+    text-decoration: none;
+   padding-top: 10vw;
+    padding-bottom: 5vw;
+}
+
+
+.nav {
+    overflow: hidden;
+    padding-bottom: 15px;
+    padding-top: 30px;
+}
+
+.nav a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 5vw;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: block;
+}
+
+.nav a:hover {
+    color: darkgrey;
+}
+
+
+main section {
+    padding: 30px;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+article {
+    
+    padding: 15px;
+    background-color: white;
+    
+}
+
+img{
+    width: 100%;
+    
+}
+
+h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h5 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+h5.veg {
+    color: forestgreen;
+}
+
+article p {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+article h3 {
+    text-shadow: 2px 2px 2px #C0C0C0;
+      text-decoration: overline;
+    font-size: 25px;
+}
+
+article h4 {
+    text-align: center;
+    font-size: 25px;
+}
+article h5 {
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+article {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+  border-radius: 4px;
+}
+
+
+button {
+    font-size: 30px;
+   float:inherit;
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size:20px;
+}
+
+.modalbg {
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+
+.modal-background {
+    background-color: dimgrey;
+    border: 1px solid red;
+    margin: 1em;
+    padding: 2em;
+}
+
+article.modal {
+    height: calc(100% - 150px);
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 3em;
+    
+}
+
+article.modal h4,
+article.modal h5 {
+    font-size: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+div.modalbg article.modal p.modal-de {
+    font-size: 2.5vw;
+    text-align: left;
+}
+
+img.modal-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+div.modalbg article.modal button{
+    padding: 5px;
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+article.modal h5.veg {
+    color: forestgreen;
+}
+
+
+
+@media screen and (min-width:650px) { 
+    .nav a {
+        display: inline-flex;
+    }
+   } 
+@media screen and (min-width:960px) {
+
+
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding-left: 150px;
+        padding-right: 150px;
+
+    }
+ 
+    h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .nav a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 3vw;
+}
+
+    
+  
+
+@media screen and (min-width:1675px) {
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+
+    
+    .nav a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 3vw;
+}
+}
